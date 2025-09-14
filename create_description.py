@@ -20,8 +20,6 @@ for index, row in df.iterrows():
     ori = row['Country']
     feat = row['Features']
 
-    desc = f"T{title}\nCondition: {cond}\n\nSize: {size}\nMaterial: {mat}\nCare Instructions: {care}\nMade In: {ori}\nFeatures: {feat}\n\nPlease comment with any questions! Measurements shown in photos.\n\nKeywords: \n"
+    desc = f"T{title}\n\nCondition: {cond}\nSize: {size}\nMaterial: {mat}\nCare Instructions: {care}\nMade In: {ori}\nFeatures: {feat}\n\nPlease comment with any questions! Measurements shown in photos.\n\nKeywords: \n###"
 
     new_file.write(f"{desc}\n")
-
-
